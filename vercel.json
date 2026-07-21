@@ -1,4 +1,42 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/la-marque",
+      "destination": "https://www.fine-spirits.com/fleur-cognac",
+      "permanent": true
+    },
+    {
+      "source": "/shop-2",
+      "destination": "https://www.fine-spirits.com/product-page/fleur-cognac",
+      "permanent": true
+    },
+    {
+      "source": "/le-concept",
+      "destination": "https://www.fine-spirits.com/vision",
+      "permanent": true
+    },
+    {
+      "source": "/category/all-products",
+      "destination": "https://www.fine-spirits.com/category/all-products",
+      "permanent": true
+    },
+    {
+      "source": "/conditions-generales-de-vente",
+      "destination": "https://www.fine-spirits.com/conditions-générales",
+      "permanent": true
+    },
+    {
+      "source": "/mentions-legales",
+      "destination": "https://www.fine-spirits.com/politique-de-confidentialité",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://www.fine-spirits.com",
+      "permanent": true
+    }
+  ]
 }
